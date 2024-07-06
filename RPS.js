@@ -102,6 +102,7 @@ function resetScore(){
   score.ties = 0;
   localStorage.removeItem('score');
   updateScoreElement();
+  hide();
 }
 function playGame(playerMove) {
   const computerMove = pickComputerMove();
@@ -151,8 +152,8 @@ function playGame(playerMove) {
   document.querySelector('.js-result').innerHTML = result;
 
   document.querySelector('.js-moves').innerHTML = `You
-<img src="images/${playerMove}-emoji.png" class="move-icon">
-<img src="images/${computerMove}-emoji.png" class="move-icon">
+<img src="imgs/${playerMove}-emoji.png" class="move-icon">
+<img src="imgs/${computerMove}-emoji.png" class="move-icon">
 Computer`;
 }
 
@@ -175,4 +176,8 @@ function pickComputerMove() {
   }
 
   return computerMove;
+}
+function hide(){
+  document.querySelector('.js-result').innerHTML=''
+  document.querySelector('.js-moves').innerHTML='';
 }

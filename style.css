@@ -1,77 +1,56 @@
-body{
-  background-color: rgb(24, 24, 24);
+body {
+  background-color: rgb(25, 25, 25);
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
-  display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  font-family: Arial;
 }
-.frame{
-  min-width: 250px;
-  margin: 10px;
-  padding: 20px;
-  border: 10px white solid;
-}
-.title{
-  font-size: 35px;
+
+.title {
+  font-size: 30px;
   font-weight: bold;
 }
-.move-button{
-background-color: transparent;
-border: 3px solid white;
-border-radius: 70px;
-padding: 35px;
-margin-right: 10px;
-margin-bottom: 10px;
+
+.move-icon {
+  height: 50px;
 }
-.move-icon{
-  height: 45px;
+
+.move-button {
+  background-color: transparent;
+  border: 3px solid white;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  margin-right: 10px;
+  cursor: pointer;
 }
-.result{
-  margin-top: 40px;
+
+.result {
   font-size: 25px;
   font-weight: bold;
-}
-.score{
   margin-top: 50px;
 }
-.reset-button{
-  padding: 7px 16px;
+
+.score {
+  margin-top: 60px;
+}
+
+.reset-score-button,
+.auto-play-button {
+  background-color: white;
+  border: none;
   font-size: 15px;
+  padding: 8px 15px;
+  cursor: pointer;
 }
-@media(max-width:494px){
-  .title{
-    font-size: 30px;
-    font-weight: bold;
-  }
-  .move-button{
-    background-color: transparent;
-    border: 3px solid white;
-    border-radius: 70px;
-    padding: 25px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    }
-    .move-icon{
-      height: 35px;
-    }
+.reset{
+  display: flex;
+  align-items: center;
 }
-@media(max-width:404px){
-  .title{
-    font-size: 25px;
-    font-weight: bold;
-  }
-  .move-button{
-    background-color: transparent;
-    border: 3px solid white;
-    border-radius: 70px;
-    padding: 20px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    }
-    .move-icon{
-      height: 25px;
-    }
+.reset-button{
+  margin-left: 10px;
+  background-color: white;
+  border: none;
+  font-size: 15px;
+  padding: 8px 20px;
+  cursor: pointer;
+  
 }
